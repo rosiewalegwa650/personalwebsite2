@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | Rose Walegwa</title>
+  <link rel="stylesheet" href="personalweb.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3e5f5; 
+      color: #4a235a;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(155, 89, 182, 0.2);
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      animation: slideUp 1s ease-out;
+    }
+
+    h1 {
+      text-align: center;
+      color: #8e44ad;
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      text-align: justify;
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .about-photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 20px;
+    }
+
+    strong {
+      color: #ba68c8;
+    }
+
+    .portfolio-btn {
+      display: block;
+      width: 150px;
+      margin: 30px auto;
+      padding: 10px 20px;
+      text-align: center;
+      background-color: #8e44ad;
+      color: white;
+      font-size: 1.2rem;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .portfolio-btn:hover {
+      background-color: #6c3483;
+    }
+
+    @keyframes slideUp {
+      0% {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: url('images/heart.png') no-repeat center center;
+      background-size: contain;
+      animation: floatUp 5s ease-in infinite;
+      z-index: 1;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-200px);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>💜 About Me</h1>
+    <img src="C:\Users\hmwaw\New folder\personal website\pexels-vinicius-wiesehofer-289347-1130626.jpg" alt="Rose Walegwa" class="about-photo" />
+    <p>
+      Hi there! I'm <strong>Rose Walegwa</strong>, a 22-year-old with a vibrant passion for life and creativity.
+      I'm a dedicated fitness enthusiast, always pushing my limits and embracing a healthy, active lifestyle.
+      Working out is not just a routine for me — it’s a way of staying grounded, focused, and connected to myself.
+
+      <br><br>
+
+      Beyond the gym, I’m truly in love with <strong>art, animals</strong>, and the beauty of self-expression through
+      <strong>modeling and makeup artistry</strong>. I see art in everything — in the way colors blend on a canvas,
+      in the graceful pose of a model, and in the gentle eyes of animals. Through makeup and modeling, I tell
+      stories, express emotion, and inspire confidence.
+
+      <br><br>
+
+      Whether I'm in a photo shoot, sharing beauty tips, creating a new look, or taking a walk with my favorite pets,
+      I live each day with <strong>passion, purpose, and authenticity</strong>. This website is a space where I bring
+      all those parts of me together — and I’m so excited to share it with you!
+    </p>
+  </div>
+
+  <a href="projects.html" class="portfolio-btn">View Portfolio</a>
+
+  <script>
+    setInterval(() => {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.style.left = `${Math.random() * 100}%`;
+      heart.style.animationDuration = `${3 + Math.random() * 2}s`;
+      document.body.appendChild(heart);
+
+      setTimeout(() => heart.remove(), 5000);
+    }, 1000);
+  </script>
+
+</body>
+</html>

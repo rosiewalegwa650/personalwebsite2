@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects | Rose Walegwa</title>
+  <style>
+     body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ed9645; 
+      color: #4a235a;
+      position: relative;
+      overflow-x: hidden;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1e88e5;
+      margin-bottom: 2rem;
+    }
+
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 2rem;
+    }
+
+    .project {
+      width: 300px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: scale(1.05);
+    }
+
+    .project img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-details {
+      padding: 1rem;
+      background-color: #f1f1f1;
+      border-top: 2px solid #1e88e5;
+    }
+
+    .project h3 {
+      color: #388e3c;
+      font-size: 1.2rem;
+    }
+
+    .project p {
+      color: #555;
+      font-size: 1rem;
+      margin: 10px 0;
+    }
+
+    .view-project {
+      padding: 8px 16px;
+      background-color: #1e88e5;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .view-project:hover {
+      background-color: #1565c0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Projects</h1>
+
+  <div class="projects-container">
+    <div class="project">
+      <img src="pexels-van-anh-nguyen-765457258-31452112.jpg" alt="Project 1">
+      <div class="project-details">
+        <h3>Project 1: stylist</h3>
+        <p>A responsive website to showcase my fashion achievements.</p>
+      </div>
+    </div>
+    <div class="project">
+      <img src="pexels-magapls-2149937712-31317483.jpg" alt="Project 2">
+      <div class="project-details">
+        <h3>Project 2: model</h3>
+        <p>my world as a part time model.</p>
+      </div>
+    </div>
+    <div class="project">
+      <img src="pexels-jenyzest-1125328.jpg" alt="Project 3">
+      <div class="project-details">
+        <h3>Project 3: Make up artistry</h3>
+        <p> my work as a certified make up artist.</p>
+      </div>
+    </div>
+    <div class="project">
+      <img src="pexels-david-bartus-43782-610293.jpg" alt="Project 4">
+      <div class="project-details">
+        <h3>Project 4: Photography Portfolio</h3>
+        <p>A photography portfolio designed to display my photography work.</p>
+      </div>
+    </div>
+    <div class="project">
+      <img src="pexels-flodahm-699459.jpg" alt="Project 5">
+      <div class="project-details">
+        <h3>Project 5: content creator</h3>
+        <p>My worlid as a content creator</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
