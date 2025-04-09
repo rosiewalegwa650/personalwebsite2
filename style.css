@@ -1,0 +1,154 @@
+.greeting-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #5fbed5;
+  margin-left: 20px;
+  text-transform: capitalize;
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
+  padding: 10px 20px; /* Add padding for better spacing */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  position: relative; /* Ensure it stays above the images */
+  z-index: 3; /* Higher z-index to appear above the images */
+}
+body.pink-bg {
+  background-color: #ffe6f0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: #fdaecb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #5fbed5;
+}
+
+.background-images {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.background-filler-images {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  pointer-events: none;
+}
+
+.bg-img {
+  width: 15%;
+  margin: 10px;
+  opacity: 0.7;
+  filter: brightness(0.9);
+  transition: transform 0.3s ease;
+  mix-blend-mode: multiply;
+  object-fit: cover;
+}
+
+.bg-img:hover {
+  transform: scale(1.1);
+}
+
+.greeting-text {
+  font-size: 30px;
+  font-weight: bold;
+  color: #5fbed5;
+  margin-bottom: 30px;
+}
+
+.main-content {
+  padding: 100px 20px 40px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.intro-section {
+  background-color: #fff0f6;
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  color: #333;
+  font-size: 18px;
+  position: relative;
+  z-index: 2;
+}
+
+footer {
+  background-color: #fdaecb;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  z-index: 2;
+  margin-top: auto;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  .main-content {
+    padding: 80px 20px 40px;
+  }
+
+  .intro-section {
+    padding: 20px;
+  }
+
+  .background-images {
+    padding: 20px;
+  }
+}
